@@ -1,8 +1,10 @@
+import UseCallback from "./features/UseCallback";
+
 function App() {
   return (
-    <div>
-      App goes here
-    </div>
+    <main>
+      <UseCallback />
+    </main>
   );
 }
 
