@@ -17,8 +17,8 @@ const UseCallback = () => {
     // if the sum function is not wrapped in useCallback. This may not be obvious because as it
     // is written, nothing is changing in the sum function. However, because functions don't have 
     // referential equality, two instances of a function are not equal (===) to each other. Since
-    // this component has a input box with an onChange function that is updating component state,
-    // the component will rerendered every time the state changes. Rerendering the component will 
+    // this component has an input box with an onChange function that is updating component state,
+    // the component will be rerendered every time the state changes. Rerendering the component will 
     // recreate the sum function, this new sum function is not === to the old sum function which 
     // means the dependency array of this useEffect changed and the effect runs again. The 
     // useCallback hook creates a memoized version of the function which will remain the same 
