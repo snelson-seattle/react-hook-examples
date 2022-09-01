@@ -14,3 +14,7 @@ section {
   align-items: center;
   min-height: 25vh;
 }
+
+button {
+  padding: 1em 2em;
+}
