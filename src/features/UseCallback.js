@@ -23,6 +23,8 @@ const UseCallback = () => {
     // means the dependency array of this useEffect changed and the effect runs again. The 
     // useCallback hook creates a memoized version of the function which will remain the same 
     // between component rerenders, unless the dependency array of the useCallback changes. 
+    // This behavior is called memoization. The useCallback hook creates a memoized version of the
+    // function it is wrapping.
     console.log(`New sum. Value: ${sum()}`);
   }, [sum]);
   return (
