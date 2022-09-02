@@ -1,6 +1,7 @@
 import UseCallback from "./features/UseCallback";
 import UseMemo from "./features/UseMemo";
 import UseRef from "./features/UseRef";
+import UseReducer from "./features/UseReducer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <UseCallback />
       <UseMemo />
       <UseRef />
+      <UseReducer />
     </main>
   );
 }
